@@ -1,0 +1,102 @@
+.formulario {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+}
+
+.formulario .form-grid .fondo-lateral {
+    background-image: url("../../public/image/bg-main-desktop.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.formulario .form-grid .form-data {
+    place-content: center;
+    margin: auto;
+    padding: 1rem;
+    width: 40%;
+    max-width: 450px;
+}
+
+/* formulario */
+
+.formulario .form-grid .form-data .data-card {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.formulario .form-grid .form-data .title-form{
+   text-align: center;
+   margin-bottom: 1.5rem;
+   font-size: 2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+/* .data-exp .data-fecha > label {
+    
+} */
+
+input {
+    width: 100%;
+    display: block;
+    background: none;
+    outline: none;
+    border: 2px solid #575757;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.data-card > input,
+.data-fecha > input,
+.cvc-target > input,
+.data-card .data-exp .data-fecha .joda > input {
+    padding: 0 1rem;
+}
+
+
+.data-card .data-exp {
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.data-card .data-exp .data-fecha .joda {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-form > button {
+    width: 100%;
+    background-image: url(../../public/image/bg-card-front.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}

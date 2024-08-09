@@ -1,0 +1,17 @@
+body {
+    position: relative;
+    background: #c2c2c2;
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-mainl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

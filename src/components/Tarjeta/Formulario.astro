@@ -1,0 +1,59 @@
+---
+import "../../styles/formulario.css";
+import "../../styles/target.css";
+---
+
+<section class="formulario">
+  <section class="form-grid">
+    <div class="fondo-lateral"></div>
+    <!--  -->
+    <div class="form-data">
+      <h3 class="title-form">Your credit card details</h3>
+      <!--  -->
+      <form action="">
+        <div class="data-card">
+          <label for="name">Carholder name</label>
+          <input type="text" placeholder="Your Name" />
+          <!--  -->
+          <label for="name">Card Number</label>
+          <input type="text" placeholder="Your Card Number" />
+          <!--  -->
+          <div class="data-exp">
+            <div class="data-fecha">
+              <label for="name">Exp. Data (MM/YY)</label>
+              <div class="joda">
+                <input type="text" placeholder="00" />
+                <input type="text" placeholder="MM/YY" />
+              </div>
+            </div>
+            <!--  -->
+            <div class="cvc-target">
+              <label for="name">CVC</label>
+              <input type="text" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="btn-form">
+            <button type="button">Confirm</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--  -->
+  <section class="card card-front">
+    <div class="info-card-front">
+      <div class="logo-card"></div>
+      <div class="number-card-front"><span>0000 0000 0000 0000</span></div>
+      <section class="personal-info">
+        <div class="nombre">Lorem insum</div>
+        <div class="fecha">00/00</div>
+      </section>
+    </div>
+  </section>
+  <!-- -----card back------ -->
+  <section class="card card-back">
+    <div class="info-card-back">
+      <div class="number-CVC">000</div>
+    </div>
+  </section>
+</section>
